@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  background: #e5e5e5;
 }
 
 /* Mobile */
@@ -11,6 +12,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  background: #ffffff;
 }
 
 .myLogo {
@@ -23,8 +25,12 @@ nav {
 }
 
 header {
-  padding: 100px 24px 150px 24px;
+  background: #ffffff;
+  border-bottom-left-radius: 80px;
   background-image: url("./img/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 100px 24px 120px 24px;
 }
 
 .headerTitle {
