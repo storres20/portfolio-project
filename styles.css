@@ -7,6 +7,8 @@ body {
 }
 
 /* Mobile */
+
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -24,6 +26,9 @@ nav {
   color: #6070ff;
 }
 
+/* **************** */
+
+/* Header */
 header {
   background: #fff;
   border-bottom-left-radius: 80px;
@@ -80,7 +85,10 @@ header {
   margin-right: 20px;
 }
 
-section {
+/* ********************* */
+
+/* Section 1 - Works */
+.section1 {
   display: grid;
   grid-template-rows: auto auto auto auto;
   row-gap: 88px;
@@ -197,4 +205,156 @@ section {
 
 .sectionButton:active {
   background: #2230d2;
+}
+
+/* ******************* */
+
+/* Section2 - About Myself */
+.section2 {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+  gap: 24px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.section2Title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 0;
+}
+
+.section2Parra {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 0;
+}
+
+.section2Subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin: 0 0 4px 0;
+}
+
+.section2Social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.section2Icon {
+  margin-right: 20px;
+}
+
+.section2Button {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.section2Button:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.section2Button:active {
+  background: #2230d2;
+}
+
+/* ********************* */
+
+/* skill */
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skillTech {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skillTitle {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  margin: 0;
+  padding: 24px 0 24px 12px;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  padding-right: 26px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.skillLang {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lang {
+  background: #f7f7f9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.langText {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  margin: 0;
+  padding: 21px 0 21px 16px;
 }
