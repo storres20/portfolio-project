@@ -21,7 +21,7 @@ To get a local copy up and running follow these simple example steps.
 - Choose a directory
 - Open a Terminal
 - write: git clone https://github.com/storres20/portfolio-project.git
-- get into to directory "hello-microverse"
+- get into to directory "portfolio-project"
 - write: npm install
 
 ## Authors
