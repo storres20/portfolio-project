@@ -377,6 +377,10 @@ header {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  background-image: url("./img/contactbg.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: right top;
 }
 
 .contactTitle {
