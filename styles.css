@@ -362,3 +362,114 @@ header {
   margin: 0;
   padding: 21px 0 21px 16px;
 }
+
+/* ********************* */
+
+/* contact-me */
+.contact {
+  background-color: #fff;
+}
+
+.contact-me {
+  background-color: #6070ff;
+  border-top-left-radius: 80px;
+  padding: 103px 24px 45px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-image: url("./img/contactbg.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: right top;
+}
+
+.contactTitle {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.contactParra {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+  margin: 0 0 12px 0;
+}
+
+.contactForm {
+  width: 100%;
+}
+
+.contactUl {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactInput {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 100%;
+  height: 48px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+.contactArea {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+}
+
+.contactButton {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.contactButton:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border: 1px solid #fff;
+}
+
+.contactButton:active {
+  background: #2230d2;
+}
