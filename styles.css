@@ -26,6 +26,10 @@ nav {
   color: #6070ff;
 }
 
+.navLinks {
+  display: none;
+}
+
 /* **************** */
 
 /* Header */
@@ -62,6 +66,10 @@ header {
   margin: 0;
 }
 
+.onlyDesk {
+  display: none;
+}
+
 .headerSubtitle {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -95,11 +103,28 @@ header {
   padding: 114px 24px;
 }
 
-.sectionCard {
+.sectionCard,
+.sectionCardInv {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: #fff;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.sectionImgMob {
+  width: 100%;
+  display: block;
+}
+
+.sectionImgDesk {
+  display: none;
+}
+
+.sectionSubCard {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -264,7 +289,7 @@ header {
   align-items: center;
   list-style: none;
   padding: 0;
-  margin: 8px 0;
+  margin: 4px 0;
 }
 
 .section2Icon {
@@ -285,7 +310,7 @@ header {
   padding: 12px;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  margin: 0;
+  margin: 20px 0 0 0;
   text-decoration: none;
 }
 
@@ -472,4 +497,216 @@ header {
 
 .contactButton:active {
   background: #2230d2;
+}
+
+/* *************** */
+
+/* Desktop view */
+@media (min-width: 768px) {
+  /* Navbar */
+  nav {
+    padding: 0 143px 48px 143px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navLinks {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+  }
+
+  .links {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    padding: 10px 12px;
+  }
+
+  /* **************** */
+
+  /* Header */
+  header {
+    background-image: url("./img/desktop/header-desktop-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 289px 15% 289px 15%;
+  }
+
+  .headerTitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    color: #091e42;
+  }
+
+  .headerParra {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+
+  .onlyDesk {
+    display: block;
+  }
+
+  /* ********************* */
+
+  /* Section 1 - Works */
+  .section1 {
+    padding: 142px;
+    gap: 142px;
+  }
+
+  .sectionCard {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    padding: 24px;
+  }
+
+  .sectionCardInv {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 22px;
+    padding: 24px;
+  }
+
+  .sectionImgMob {
+    display: none;
+  }
+
+  .sectionImgDesk {
+    display: block;
+  }
+
+  .sectionSubCard {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .sectionTitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .sectionCanopy {
+    padding: 0;
+  }
+
+  .text1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .text2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .sectionParra {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .sectionButton {
+    margin: 16px 0;
+  }
+
+  /* ******************* */
+
+  /* Section2 - About Myself */
+  .section2 {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 142px;
+  }
+
+  .top {
+    width: 70%;
+  }
+
+  .section2Title {
+    color: #091e42;
+  }
+
+  /* ********************* */
+
+  /* skill */
+  .skillLang {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .lang {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .langImg {
+    padding: 12px 62px 16px 12px;
+  }
+
+  .langText {
+    padding: 0 0 20px 12px;
+  }
+
+  /* ********************* */
+
+  /* contact-me */
+  .contact-me {
+    background-image: url("./img/desktop/contactbg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactParra {
+    width: 50%;
+  }
+
+  .contactUl {
+    gap: 27px;
+  }
+
+  .contactForm {
+    width: 40%;
+  }
+
+  .contactButton {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
