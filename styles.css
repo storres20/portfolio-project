@@ -227,6 +227,7 @@ header {
   background: #6070ff;
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  transform: translate(5px, 5px);
 }
 
 .sectionButton:active {
@@ -318,6 +319,7 @@ header {
   background: #6070ff;
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  transform: translate(5px, 5px);
 }
 
 .section2Button:active {
@@ -493,6 +495,7 @@ header {
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border: 1px solid #fff;
+  transform: translate(5px, 5px);
 }
 
 .contactButton:active {
@@ -506,6 +509,11 @@ header {
   /* Navbar */
   nav {
     padding: 0 143px 48px 143px;
+  }
+  
+  .myLogo:hover, .links:hover {
+    transform: scale(1.5);
+    cursor: pointer;
   }
 
   .hamburger {
