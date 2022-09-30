@@ -228,6 +228,7 @@ header {
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   transform: translate(5px, 5px);
+  transition: all .5s ease-out;
 }
 
 .sectionButton:active {
@@ -320,6 +321,7 @@ header {
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   transform: translate(5px, 5px);
+  transition: all .5s ease-out;
 }
 
 .section2Button:active {
@@ -496,6 +498,7 @@ header {
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border: 1px solid #fff;
   transform: translate(5px, 5px);
+  transition: all .5s ease-out;
 }
 
 .contactButton:active {
