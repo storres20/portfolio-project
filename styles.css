@@ -510,11 +510,6 @@ header {
   nav {
     padding: 0 143px 48px 143px;
   }
-  
-  .myLogo:hover, .links:hover {
-    transform: scale(1.5);
-    cursor: pointer;
-  }
 
   .hamburger {
     display: none;
@@ -534,6 +529,12 @@ header {
     line-height: 20px;
     color: #344563;
     padding: 10px 12px;
+  }
+
+  .myLogo:hover,
+  .links:hover {
+    transform: scale(1.5);
+    cursor: pointer;
   }
 
   /* **************** */
