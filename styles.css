@@ -17,6 +17,10 @@ nav {
   background: #fff;
 }
 
+.hide {
+  display: none;
+}
+
 .myLogo {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -515,6 +519,10 @@ header {
   }
 
   .hamburger {
+    display: none;
+  }
+  
+  .mobMenu {
     display: none;
   }
 
