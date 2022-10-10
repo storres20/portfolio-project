@@ -27,7 +27,7 @@ nav {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #0A23FF;
+  color: #0a23ff;
 }
 
 .navLinks {
@@ -80,7 +80,7 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #0A23FF;
+  color: #0a23ff;
   margin: 0;
 }
 
@@ -203,7 +203,7 @@ header {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #0017EB;
+  color: #0017eb;
   background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
@@ -285,7 +285,7 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #0A23FF;
+  color: #0a23ff;
   margin: 0 0 4px 0;
 }
 
@@ -521,7 +521,7 @@ header {
   .hamburger {
     display: none;
   }
-  
+
   .mobMenu {
     display: none;
   }
