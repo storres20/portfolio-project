@@ -9,13 +9,21 @@
 </head>
 <body>
   <nav>
-    <h1 class="myLogo">Italo</h1>
+    <h2 class="myLogo">Italo</h2>
     <img class="hamburger" src="./img/Hamburger.png" alt="hamburger">
     <ul class="navLinks">
       <li class="links">Portfolio</li>
       <li class="links">About</li>
       <li class="links">Contact</li>
     </ul>
+    <div class="mobMenu hide">
+      <ul>
+        <li class="cross"><img src="img/cross.png" alt="cross"></li>
+        <li class="mobLinks"><a href="#work">Portolio</a></li>
+        <li class="mobLinks"><a href="#about">About</a></li>
+        <li class="mobLinks"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
   
   <header>
@@ -31,7 +39,7 @@
     </ul>
   </header>
   
-  <section class="section1">
+  <section id="work" class="section1">
     <div class="sectionCard">
       <img class="sectionImgMob" src="./img/card1.png" alt="card1">
       <img class="sectionImgDesk" src="./img/desktop/card1.png" alt="card1">
@@ -118,7 +126,7 @@
     </div>
   </section>
   
-  <section class="section2">
+  <section id="about" class="section2">
     <div class="top">
       <h2 class="section2Title">About<br>Myself</h2>
       <p class="section2Parra">Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
@@ -163,19 +171,20 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="contact-me">
       <h2 class="contactTitle">Contact me</h2>
       <p class="contactParra">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
       <form class="contactForm" action="https://formspree.io/f/xyyvwalr" method="POST">
         <ul class="contactUl">
-          <li><input class="contactInput" type="text" name="name" placeholder="Full name" maxlength="30" required autocomplete="off"></li>
-          <li><input class="contactInput" type="email" name="email" placeholder="Email" required></li>
-          <li><textarea class="contactArea" name="msg" rows="8" placeholder="Write your message here" maxlength="500" required></textarea></li>
+          <li><input class="contactInput" type="text" name="name" placeholder="Full name" maxlength="30" required autocomplete="off" aria-label="name"></li>
+          <li><input class="contactInput" type="email" name="email" placeholder="Email" required aria-label="email"></li>
+          <li><textarea class="contactArea" name="msg" rows="8" placeholder="Write your message here" maxlength="500" required aria-label="textarea"></textarea></li>
         </ul>
         <button class="contactButton" type="submit">Get It Touch</button>
       </form>
     </div>
   </section>
+  <script src="index.js"></script>
 </body>
 </html>

@@ -17,13 +17,56 @@ nav {
   background: #fff;
 }
 
+.hide {
+  display: none;
+}
+
+.cross {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 37px;
+}
+
+.mobMenu {
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 8px;
+}
+
+.mobMenu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mobLinks {
+  padding: 8px 0;
+}
+
+.mobLinks a {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  text-decoration: none;
+}
+
 .myLogo {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
+  color: #0a23ff;
 }
 
 .navLinks {
@@ -76,7 +119,7 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #0a23ff;
   margin: 0;
 }
 
@@ -199,7 +242,7 @@ header {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #0017eb;
   background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
@@ -227,6 +270,8 @@ header {
   background: #6070ff;
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  transform: translate(5px, 5px);
+  transition: all 0.5s ease-out;
 }
 
 .sectionButton:active {
@@ -279,7 +324,7 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #0a23ff;
   margin: 0 0 4px 0;
 }
 
@@ -318,6 +363,8 @@ header {
   background: #6070ff;
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  transform: translate(5px, 5px);
+  transition: all 0.5s ease-out;
 }
 
 .section2Button:active {
@@ -493,6 +540,8 @@ header {
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border: 1px solid #fff;
+  transform: translate(5px, 5px);
+  transition: all 0.5s ease-out;
 }
 
 .contactButton:active {
@@ -512,6 +561,10 @@ header {
     display: none;
   }
 
+  .mobMenu {
+    display: none;
+  }
+
   .navLinks {
     display: flex;
     gap: 8px;
@@ -526,6 +579,12 @@ header {
     line-height: 20px;
     color: #344563;
     padding: 10px 12px;
+  }
+
+  .myLogo:hover,
+  .links:hover {
+    transform: scale(1.5);
+    cursor: pointer;
   }
 
   /* **************** */
