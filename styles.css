@@ -748,6 +748,11 @@ header {
     max-height: 100%;
     overflow-y: auto;
   }
+  
+  .popUp-content {
+    width: 80%;
+    margin: 50px auto 50px auto;
+  }
 
   /* ******************* */
 
