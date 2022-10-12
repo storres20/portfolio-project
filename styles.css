@@ -158,6 +158,14 @@ header {
   gap: 12px;
 }
 
+.cardParaMob {
+  display: block;
+}
+
+.cardParaDesk {
+  display: none;
+}
+
 .sectionImgMob {
   width: 100%;
   display: block;
@@ -287,6 +295,7 @@ header {
   transform: translate(-50%, -50%);
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
 }
 
 .popUp-content {
@@ -295,6 +304,10 @@ header {
   margin: 16px auto 0 auto;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+}
+
+.imgButton {
+  padding-left: 10px;
 }
 
 .deskColum {
@@ -692,6 +705,20 @@ header {
     padding: 24px;
   }
 
+  .cardParaMob {
+    display: none;
+  }
+
+  .cardParaDesk {
+    display: block;
+  }
+
+  .sectionFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .sectionImgMob {
     display: none;
   }
@@ -754,6 +781,7 @@ header {
   .popUp {
     max-height: 100%;
     overflow-y: auto;
+    z-index: 1000;
   }
 
   .popUp-content {
