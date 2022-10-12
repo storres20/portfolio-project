@@ -99,16 +99,20 @@ seeProject.forEach((item) => {
             </div>
             <img class="sectionImgMob" src="${card[0].imageMob}" alt="card1">
             <img class="sectionImgDesk" src="${card[0].imageDesk}" alt="card1">
-            <p class="sectionParra">${card[0].para}</p>
-            <ul class="sectionTech">
-              <li class="tech">${card[0].tech[0]}</li>
-              <li class="tech">${card[0].tech[1]}</li>
-              <li class="tech">${card[0].tech[2]}</li>
-            </ul>
-            <div class="borderPop"></div>
-            <div class="buttonPop">
-              <a href="${card[0].live}" class="sectionButton" name="1">See live</a>
-              <a href="${card[0].source}" class="sectionButton" name="1">See Source</a>
+            <div class="deskColum">
+              <p class="sectionParra">${card[0].para}</p>
+              <div>
+                <ul class="sectionTech">
+                  <li class="tech">${card[0].tech[0]}</li>
+                  <li class="tech">${card[0].tech[1]}</li>
+                  <li class="tech">${card[0].tech[2]}</li>
+                </ul>
+                <div class="borderPop"></div>
+                <div class="buttonPop">
+                  <a href="${card[0].live}" class="sectionButton" name="1">See live</a>
+                  <a href="${card[0].source}" class="sectionButton" name="1">See Source</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
