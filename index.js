@@ -78,6 +78,7 @@ seeProject.forEach((item) => {
       if (it.id === name) {
         return it;
       }
+      return false;
     });
 
     popUp.innerHTML = `
@@ -87,7 +88,7 @@ seeProject.forEach((item) => {
           <div class="sectionSubCard">
             <div class="popTitle">
               <h2 class="sectionTitle">${card[0].title}</h2>
-              <img class="crossblack" src="./img/crossblack.png" alt="crossblack" onclick="crossblack()">
+              <img class="crossblack" src="./img/crossblack.png" alt="crossblack" onclick="popUp.classList.toggle('hide')">
             </div>
             <div class="sectionCanopy">
               <h3 class="text1">${card[0].canopy[0]}</h3>
@@ -116,7 +117,3 @@ seeProject.forEach((item) => {
     popUp.classList.toggle('hide');
   });
 });
-
-function crossblack() {
-  popUp.classList.toggle('hide');
-}
