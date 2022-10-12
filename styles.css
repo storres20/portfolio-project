@@ -285,20 +285,20 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .popUp-content {
   background-color: #fff;
   width: 90%;
   margin: 16px auto 0 auto;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
 .borderPop {
-  border-bottom: 1px solid #EBECF0;
+  border-bottom: 1px solid #ebecf0;
   width: 100%;
   margin-top: 12px;
 }
@@ -319,6 +319,7 @@ header {
 .crossblack {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 /* ******************* */
@@ -742,7 +743,7 @@ header {
   .sectionButton {
     margin: 16px 0;
   }
-  
+
   .popUp {
     max-height: 100%;
     overflow-y: auto;
