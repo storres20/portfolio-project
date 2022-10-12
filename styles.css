@@ -158,6 +158,14 @@ header {
   gap: 12px;
 }
 
+.cardParaMob {
+  display: block;
+}
+
+.cardParaDesk {
+  display: none;
+}
+
 .sectionImgMob {
   width: 100%;
   display: block;
@@ -276,6 +284,61 @@ header {
 
 .sectionButton:active {
   background: #2230d2;
+}
+
+.popUp {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.popUp-content {
+  background-color: #fff;
+  width: 90%;
+  margin: 16px auto 0 auto;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.imgButton {
+  padding-left: 10px;
+}
+
+.deskColum {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.borderPop {
+  border-bottom: 1px solid #ebecf0;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.buttonPop {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.popTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.crossblack {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 /* ******************* */
@@ -642,12 +705,27 @@ header {
     padding: 24px;
   }
 
+  .cardParaMob {
+    display: none;
+  }
+
+  .cardParaDesk {
+    display: block;
+  }
+
+  .sectionFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .sectionImgMob {
     display: none;
   }
 
   .sectionImgDesk {
     display: block;
+    width: 100%;
   }
 
   .sectionSubCard {
@@ -693,10 +771,28 @@ header {
     font-size: 16px;
     line-height: 24px;
     color: #344563;
+    width: 65%;
   }
 
   .sectionButton {
     margin: 16px 0;
+  }
+
+  .popUp {
+    max-height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .popUp-content {
+    width: 80%;
+    margin: 50px auto 50px auto;
+  }
+
+  .deskColum {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   /* ******************* */
