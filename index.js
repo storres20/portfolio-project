@@ -169,3 +169,20 @@ seeProject.forEach((item) => {
     popUp.classList.toggle('hide');
   });
 });
+
+/* email validation */
+
+const contactButton = document.getElementById('contactButton');
+const form = document.querySelector('form');
+const small = document.querySelector('small');
+
+contactButton.addEventListener('click', (e) => {
+  const { email } = form.elements;
+
+  if (email.value !== email.value.toLowerCase()) {
+    small.innerHTML = `
+      Type the email in lowercase!
+    `;
+    e.preventDefault();
+  }
+});
