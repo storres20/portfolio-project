@@ -184,5 +184,7 @@ contactButton.addEventListener('click', (e) => {
       Type the email in lowercase!
     `;
     e.preventDefault();
+  } else {
+    small.innerHTML = '';
   }
 });
