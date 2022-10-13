@@ -611,6 +611,15 @@ header {
   background: #2230d2;
 }
 
+.error_mes {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 /* *************** */
 
 /* Desktop view */
